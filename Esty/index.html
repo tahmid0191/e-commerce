@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/link/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="assets/link/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/link/fontawesome-free-6.5.1-web/css/all.css">
+    <script src="assets/link/fontawesome-free-6.5.1-web/js/all.js"></script>
+    <script src="assets/jquery/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<!--== marquee ==-->   
+    <div class="marquee"> 
+        <marquee behavior="scroll" direction="left" >
+        This is your run of the mill marquee, but when you hover over it, it pauses. Say thank you, Jake!
+        </marquee>
+    </div>
+
+<!--== Navber ==-->
+    <nav class="navbar bg-body-tertiary fixed-top sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="assets/img/logo.png" alt="" height="50px" width="100px">ETSY</a>
+            <div class="nav-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="modal-buttopn">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sing up</button>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5>Etsy Shooping</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+        
+                 <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="assets/about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="assets/file/t-shirt.html">T-shirt</a></li>
+                                    <li><a class="dropdown-item" href="assets/file/pant.html">Pant</a></li>
+                                    <li><a class="dropdown-item" href="assets/file/frock.html">Frock</a></li>
+                                    <li><a class="dropdown-item" href="assets/file/bag.html">Bag</a></li>
+                                    <li><a class="dropdown-item" href="assets/file/shows.html">Show</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="assets/file/terms-conditons.html">Terms & Conditions</a></li>
+                                    <li><a class="dropdown-item" href="assets/file/privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a class="dropdown-item" href="assets/file/faq.html">FAQ</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="assets/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="assets/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-danger" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Log in</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">City</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">State</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>Dhaka</option>
+                    <option>Barishal</option>
+                    <option>Khulna</option>
+                    <option>Sylet</option>
+                    <option>Rangpur</option>
+                    <option>Chattogram</option>
+                    <option>Mymensingh</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom05" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Please choose your email.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationCustom05" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Please choose your password
+                    </div>
+                  </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--== Carousel ==-->
+ <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/banner-img-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h5>BEST COLLECTION</h5>
+            <h1>NEW ARRIVALES</h1>
+            <a href = "#" class = "btn btn-danger mt-3 text-uppercase">buy now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/banner-img-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h5>BEST COLLECTION</h5>
+            <h1>NEW ARRIVALES</h1>
+            <a href = "#" class = "btn btn-danger mt-3 text-uppercase">buy now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/banner-img-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h5>BEST COLLECTION</h5>
+            <h1>NEW ARRIVALES</h1>
+            <a href = "#" class = "btn btn-danger mt-3 text-uppercase">buy now</a>
+          </div>
+        </div>
+      </div>
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+<!--== CETAGORY ==-->
+<section class="cetagory">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-3">
+                    <div class="service-item-a">
+                        <h4>Woman</h4>
+                    </div>
+            </div>
+            <div class="col-md-3">
+                    <div class="service-item-b">
+                        <h4>MAN</h4>
+                    </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-item-c">
+                        <h4>KIDS</h4>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!--== POPULER ==-->
+<section class="populer">
+    <div class="container">
+        <h1>POPULAR DRESS</h1>
+        <p>One for all and all for one, Muskehounds are always ready. One for all and all for one, helping everybody.</p>
+            <div class = "collection-list mt-4 row gx-0 gy-3">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 shadow-lg " >
+                    <div class = "collection-img position-relative">
+                        <img src = "assets/img/g1.jpg" class = "w-100">
+                        <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">gray shirt</p>
+                        <span class = "fw-bold">$ 45.50</span>
+                        <a href=""><button type = "button" class = "btn  btn-outline-danger">Add Cart</button></a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 ni shadow-lg ">
+                    <div class = "collection-img position-relative">
+                        <img src = "assets/img/b1.jpg" class = "w-100">
+                        <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">gray shirt</p>
+                        <span class = "fw-bold">$ 45.50</span>
+                        <a href=""><button type = "button" class = "btn  btn-outline-danger">Add Cart</button></a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 shadow-lg ">
+                    <div class = "collection-img position-relative">
+                        <img src = "assets/img/g6.jpg" class = "w-100">
+                        <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">gray shirt</p>
+                        <span class = "fw-bold">$ 45.50</span>
+                        <a href=""><button type = "button" class = "btn  btn-outline-danger">Add Cart</button></a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2  shadow-lg " >
+                    <div class = "collection-img position-relative">
+                        <img src = "assets/img/k2.jpg" class = "w-100">
+                        <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">gray shirt</p>
+                        <span class = "fw-bold">$ 45.50</span>
+                        <a href=""><button type = "button" class = "btn  btn-outline-danger">Add Cart</button></a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2  shadow-lg " content id="new-item">
+                    <div class = "collection-img position-relative">
+                        <img src = "assets/img/g5.jpg" class = "w-100">
+                        <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">gray shirt</p>
+                        <span class = "fw-bold">$ 45.50</span>
+                        <a href=""><button type = "button" class = "btn  btn-outline-danger">Add Cart</button></a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2  shadow-lg ">
+                    <div class = "collection-img position-relative">
+                        <img src = "assets/img/b2.jpg" class = "w-100">
+                        <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">gray shirt</p>
+                        <span class = "fw-bold">$ 45.50</span>
+                        <a href=""><button type = "button" class = "btn  btn-outline-danger">Add Cart</button></a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2  shadow-lg ">
+                    <div class = "collection-img position-relative">
+                        <img src = "assets/img/g9.jpg" class = "w-100">
+                        <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">gray shirt</p>
+                        <span class = "fw-bold">$ 45.50</span>
+                        <a href=""><button type = "button" class = "btn  btn-outline-danger">Add Cart</button></a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2  shadow-lg ">
+                    <div class = "collection-img position-relative">
+                        <img src = "assets/img/b3.jpg" class = "w-100">
+                        <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">gray shirt</p>
+                        <span class = "fw-bold">$ 45.50</span>
+                        <a href=""><button type = "button" class = "btn  btn-outline-danger">Add Cart</button></a>
+                    </div>
+                </div>
+
+        </div> 
+    </div>
+</section>
+
+
+
+
+
+<!--== ADD ==-->
+<section class="sales">
+    <div class="container">
+        <div class="row min-vh-100 align-items-center align-content-center">
+            <div class="col-md-6">
+                <div class="sales-img">
+                    <img class=" mw-100" src="assets/img/k2.jpg" alt="" height="500px" >
+                </div>
+            </div>
+            <div class="col-md-6  mt-5 mt-md-0">
+                <div class="sales-text">
+                    <h1>Big Offer <br>
+                        up to 70% off</h1>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat pulvinar enim hendrerit pellentesque.</P>
+                    <a class="btn btn-danger px-3 mt-3" href="">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!--== THRENDY ==-->
+<section class="populer">
+    <div class="container">
+        <h1>TRENDY COLLECTION</h1>
+        <p>One for all and all for one, Muskehounds are always ready. One for all and all for one, helping everybody.</p>
+        <div class = "row g-0">
+            <div class = "collection-list mt-4 row gx-0 gy-3">
+                <!--======= ni ======= -->
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 shadow-lg " >
+                    <div class = "collection-img position-relative">
+                        <img src = "assets/img/k1.jpg" class = "w-100">
+                        <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">gray shirt</p>
+                        <span class = "fw-bold">$ 45.50</span>
+                        <a href=""><button type = "button" class = "btn  btn-outline-danger">Add Cart</button></a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 ni shadow-lg ">
+                    <div class = "collection-img position-relative">
+                        <img src = "assets/img/k3.jpg" class = "w-100">
+                        <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">gray shirt</p>
+                        <span class = "fw-bold">$ 45.50</span>
+                        <a href=""><button type = "button" class = "btn  btn-outline-danger">Add Cart</button></a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 shadow-lg ">
+                    <div class = "collection-img position-relative">
+                        <img src = "assets/img/k6.jpg" class = "w-100">
+                        <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">gray shirt</p>
+                        <span class = "fw-bold">$ 45.50</span>
+                        <a href=""><button type = "button" class = "btn  btn-outline-danger">Add Cart</button></a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 shadow-lg ">
+                    <div class = "collection-img position-relative">
+                        <img src = "assets/img/k7.jpg" class = "w-100">
+                        <span class = "position-absolute bg-danger text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <div class = "rating mt-3">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <p class = "text-capitalize my-1">gray shirt</p>
+                        <span class = "fw-bold">$ 45.50</span>
+                        <a href=""><button type = "button" class = "btn  btn-outline-danger">Add Cart</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Navber  -->
+
+
+
+
+
+<!--== services ==-->
+<section class="services" id="services">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-3">
+          <div class="service-item  ">
+                <h1><i class="fa-solid fa-truck-fast"></i></h1>
+                <h4>Free Shipping</h4>
+                <p>Order Over $50</p>
+            </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="service-item  ">
+                <h1><i class="fa-solid fa-circle-notch"></i></i></h1>
+                <h4>Easy To Return</h4>
+                <p>Within 15 days</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="service-item ">
+                <h1><i class="fa-solid fa-lock"></i></h1>
+                <h4>Secure Payment</h4>
+                <p>Online Shopping</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="service-item ">
+                <h1><i class="fa-solid fa-gift"></i></h1>
+                <h4>Best Offer</h4>
+                <p>Guranteed</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+ 
+<!--== CART ==-->
+<section class="cart">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                    <img src="assets/img/g4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor</h5>
+                      <p class="card-text"><small class="text-body-secondary">Anvil Jackson 24 March 2022</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                    <img src="assets/img/b1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor</h5>
+                      <p class="card-text"><small class="text-body-secondary">Anvil Jackson 24 March 2022</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                    <img src="assets/img/k2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor</h5>
+                      <p class="card-text"><small class="text-body-secondary">Anvil Jackson 24 March 2022</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!--== footer ==-->
+<section class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <a href="index.html"><li> Home</li></a>
+                    <a href="assets/file/terms-conditons.html"><li> Terms & Conditions</li></a>
+                    <a href="assets/file/privacy-policy.html"><li> Privacy Policy</li></a>
+                    <a href="assets/file/faq.html"><li> FAQ </li></a>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>HELPFUL LINKS</h4>
+                <ul>
+                    <a href="index.html"><li> Home</li></a>
+                    <a href=""><li> Product</li></a>
+                    <a href="assets/blog.html"><li> Blog</li></a>
+                    <a href="assets/contact.html"><li> Contact</li></a>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>STORE INFO</h4>
+                <ul>
+                    <a href=""><li><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</li></a>
+                    <a href=""><li><i class="fa-solid fa-mobile"></i> 01946095409</li></a>
+                    <a href=""><li><i class="fa-solid fa-envelope"></i>mbttahmid12345@gmail.com</li></a>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>GET IN TOUCH</h4>
+                <p>Sign up to our mailing list now!</p>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+            </div>
+        </div>
+<hr>
+    <div class="name">
+        <p>© 2024 All right reserved by Tahmid</p>
+    </div>
+
+    </div>
+</section>
+<!-- footer -->
+
+
+
+</body>
+</html>

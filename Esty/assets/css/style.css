@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*===== INDEX.HTML =====*/
+
+
+/* MARQUEE */
+.marquee { 
+    background-color: red;
+    height: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    }
+
+/* NAVBAR */
+.navbar{
+    box-shadow: 0 0 8px;
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar .offcanvas-body{
+    background-color: gray;
+}
+.navbar .offcanvas-body .navbar-nav .nav-item .nav-link{
+    font-weight: bold;
+}
+.navbar .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+    color: greenyellow;
+}
+.navbar .offcanvas-body .navbar-nav .nav-item .dropdown-menu .dropdown-item{
+    font-weight: 500;
+}
+.navbar .offcanvas-body .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{
+    background-color: grey;
+}
+
+/* CAROUSEL */
+.carousel-inner .carousel-caption{
+    color: black;
+   font-weight: bold;
+   
+}
+
+/* CATEGORY */
+.cetagory{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.cetagory .row .col-md-3{
+    padding-top: 50px;
+}
+
+.cetagory .row .col-md-3 .service-item-a{
+    background-image:url(../img/g2.png);
+    background-position: top;
+    background-size: cover;
+    box-shadow: 0 0 8px;
+    border-radius: 10px;
+    height: 300px;
+    transition: 0.2s;
+}
+.cetagory .row .col-md-3 .service-item-a h4{
+ padding-top: 30%;
+ font-weight: bold;
+ padding-left: 100px;
+}
+.cetagory .row .col-md-3 .service-item-a:hover{
+    transform: scale(1.1);
+}
+.cetagory .row .col-md-3 .service-item-b{
+    background-image:url(../img/b3.jpg);
+    background-position: top;
+    background-size: cover;
+    box-shadow: 0 0 8px;
+    border-radius: 10px;
+    height: 300px;
+    transition: 0.2s;
+}
+.cetagory .row .col-md-3 .service-item-b h4{
+    padding-top: 45%;
+    font-weight: bold;
+   }
+.cetagory .row .col-md-3 .service-item-b:hover{
+    transform: scale(1.1);
+}
+.cetagory .row .col-md-3 .service-item-c{
+    background-image:url(../img/k1.jpg);
+    background-position:top;
+    background-size: cover;
+    box-shadow: 0 0 8px;
+    border-radius: 10px;
+    height: 300px;
+    transition: 0.2s;
+}
+.cetagory .row .col-md-3 .service-item-c h4{
+    padding-top: 50%;
+    font-weight: bold;
+   }
+.cetagory .row .col-md-3 .service-item-c:hover{
+    transform: scale(1.1);
+}
+
+/* POPULER */
+.populer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.populer h1{
+    text-align: center;
+    font-size: 36px;
+}
+.populer p{
+    text-align: center;
+    font-size: 18px;
+}
+.populer .collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+/* SALES */
+.sales .sales-text h1{
+    font-size:60px ;
+    font-weight: bold;
+}
+
+/* SERVICES */
+.services{
+    padding-bottom: 60px;
+    text-align: center;
+}
+.services .row .col-md-3{
+    padding-top: 50px;
+}
+.services .row .col-md-3 .service-item{
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0 0 8px;
+    border-radius: 5px;
+}
+.services .row .col-md-3 h1{
+    font-size: 50px ;
+    color: red;
+}
+.services .row .col-md-3 h4{
+    font-weight: bold;
+    padding-top: 15px;
+}
+.services .row .col-md-3 p{
+    padding-top: 10px;
+}
+
+/* FOOTER */
+.footer{
+    margin-top: 100px;
+    background-color: lightcyan;
+}
+.footer .row{
+    padding-top: 100px;
+    padding-bottom:100px ;
+}
+.footer .row .col-md-3{
+    padding-top: 20px;
+}
+.footer .row .col-md-3 ul{
+    list-style: none;
+}
+.footer .row .col-md-3 ul a{
+    text-decoration: none;
+}
+.footer .row .col-md-3 ul li{
+    color: black;
+    padding: 5px;
+}
+.footer .row .col-md-3 ul li:hover{
+    color: red;
+}
+.footer .name{
+    padding-bottom: 50px;
+}
+.footer .name p{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+/*===== ABOUT.HTML =====*/
+
+.about .about-name{
+    background-image: url(../img/banner-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+}
+.about .about-name h1{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 100px;
+}
+.about .about-text span{
+    color: red;
+}
+.about .about-text h1{
+    font-weight: bold;
+   padding-top: 30px;
+}
+.about .about-text p{
+    padding-top: 20px;
+}
+.about .about-text .btn{
+    margin-top: 20px;
+}
+.about .review .review-headline {
+    text-align: center;
+    padding-top: 50px;
+}
+.about .review .review-headline h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.about .review .row{
+    margin-top: 50px;
+}
+.about .review-details{
+   box-shadow: 0 0 5px black;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+ 
+.about .review-details .review-profile{
+    display: flex;
+    align-items: center;
+}
+.about .review-details .review-profile .profile-img{
+width: 60px;
+width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px 0;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.about .review-details .review-profile .profile-img:hover{
+    transform: scale(1.2);
+}
+.about .review-details .review-profile .profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.about .review-details .review-profile .profile-name {
+    margin-left: 20px;
+    line-height: 20px;
+}
+.about .review-details .review-profile .profile-name strong{
+    font-size: 20px;
+}
+.about .review-details .review-profile .profile-name .like{
+    color: orange;
+}
+.about .review-details .review-profile .commant p{
+    text-align: justify;
+    line-height: 22px;
+    margin-top: 20px;
+    
+}
+
+
+
+
+
+/*===== BLOG.HTML =====*/
+
+.cart .cart-name{
+    background-image: url(../img/banner-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+}
+.cart .cart-name h1{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+
+
+
+
+/*===== CONTACT.HTML =====*/
+
+.contact .contact-name{
+    background-image: url(../img/banner-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+}
+.contact .contact-name h1{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+
+
+
+
+/*===== PRIVACY-POLICY.HTML =====*/
+
+.privacy-policy .privacy-policy-name{
+    background-image: url(../img/banner-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+}
+.privacy-policy .privacy-policy-name h1{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+.privacy-policy .privacy-policy-box{
+    padding-top: 50px;
+}
+.privacy-policy .privacy-policy-box h4{  
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*===== TERMS-CONDITION.HTML =====*/
+
+.terms-conditons .terms-conditons-name{
+    background-image: url(../img/banner-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+}
+.terms-conditons .terms-conditons-name h1{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+
+
+
+
+
+/*===== FAQ.HTML =====*/
+
+.faq .faq-name{
+    background-image: url(../img/banner-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+}
+.faq .faq-name h1{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+.faq .row{
+    padding-top: 100px;
+}
+.faq .row .col-md-5{
+    padding-top: 30px;
+    padding-top: 30px;
+}
+.faq .row .col-md-5 .accordion-item .accordion-button{
+    background-color: rgb(207, 189, 189);
+    font-weight: bold;
+    margin-top: 20px;
+}
+.faq .row .col-md-5 .accordion-item .accordion-body{
+    background-color:  rgb(207, 189, 189);
+}
+.faq .row .col-md-5 h1{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+
+/*=====  T-SHIRT.HTML =====*/
+
+.t-shirt .t-shirt-name{
+    background-image: url(../img/banner-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+}
+.t-shirt .t-shirt-name h1{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+.t-shirt .row{
+    padding-top: 50px;
+}
+.t-shirt .col-md-3{
+    margin-top: 30px;
+    display: none;
+}
+.t-shirt .card{
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px red;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    transition: 0.1s;
+}
+.t-shirt .card:hover{
+    transform: scale( 1.1);
+}
+.t-shirt .card p{
+    color: gray;
+}
+.t-shirt .card h6{
+    font-weight: bold;
+}
+.t-shirt .card .product-like{
+    color: orange;
+    margin-bottom: 5px;
+}
+.t-shirt .card .btn{
+    background: red;
+    color: antiquewhite;
+}
+.t-shirt .card img{
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.t-shirt .d-grid .btn{
+    margin-top: 50px;
+}
+
+
+
+
+
+/*=====  FROCK.HTML =====*/
+
+.frock .frock-name{
+    background-image: url(../img/banner-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+}
+.frock .frock-name h1{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+.frock .row{
+    padding-top: 50px;
+}
+.frock .col-md-3{
+    margin-top: 30px;
+    display: none;
+}
+.frock .card{
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px red;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    transition: 0.1s;
+}
+.frock .card:hover{
+    transform: scale( 1.1);
+}
+.frock .card p{
+    color: gray;
+}
+.frock .card h6{
+    font-weight: bold;
+}
+.frock .card .product-like{
+    color: orange;
+    margin-bottom: 5px;
+}
+.frock .card .btn{
+    background: red;
+    color: antiquewhite;
+}
+.frock .card img{
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.frock .d-grid .btn{
+    margin-top: 50px;
+}
+
+
+
+
+/*=====  SHOWS.HTML =====*/
+
+.shows .shows-name{
+    background-image: url(../img/banner-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+}
+.shows .shows-name h1{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+.shows .row{
+    padding-top: 50px;
+}
+.shows .col-md-3{
+    margin-top: 30px;
+    display: none;
+}
+.shows .card{
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px red;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    transition: 0.1s;
+}
+.shows .card:hover{
+    transform: scale( 1.1);
+}
+.shows .card p{
+    color: gray;
+}
+.shows .card h6{
+    font-weight: bold;
+}
+.shows .card .product-like{
+    color: orange;
+    margin-bottom: 5px;
+}
+.shows .card .btn{
+    background: red;
+    color: antiquewhite;
+}
+.shows .card img{
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.shows .d-grid .btn{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+/*=====  PANT.HTML =====*/
+
+.pants .pants-name{
+    background-image: url(../img/banner-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+}
+.pants .pants-name h1{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+.pants .row{
+    padding-top: 50px;
+}
+.pants .col-md-3{
+    margin-top: 30px;
+}
+.pants .card{
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px red;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    transition: 0.1s;
+}
+.pants .card:hover{
+    transform: scale( 1.1);
+}
+.pants .card p{
+    color: gray;
+}
+.pants .card h6{
+    font-weight: bold;
+}
+.pants .card .product-like{
+    color: orange;
+    margin-bottom: 5px;
+}
+.pants .card .btn{
+    background: red;
+    color: antiquewhite;
+}
+.pants .card img{
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/*=====  BAG.HTML =====*/
+
+.bag .bag-name{
+    background-image: url(../img/banner-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+}
+.bag .bag-name h1{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+}
+.bag .row{
+    padding-top: 50px;
+}
+.bag .col-md-3{
+    margin-top: 30px;
+}
+.bag .card{
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px red;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    transition: 0.1s;
+}
+.bag .card:hover{
+    transform: scale( 1.1);
+}
+.bag .card p{
+    color: gray;
+}
+.bag .card h6{
+    font-weight: bold;
+}
+.bag .card .product-like{
+    color: orange;
+    margin-bottom: 5px;
+}
+.bag .card .btn{
+    background: red;
+    color: antiquewhite;
+}
+.bag .card img{
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
